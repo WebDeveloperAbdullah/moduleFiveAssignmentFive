@@ -1,7 +1,5 @@
 <?php 
-session_start([
-  'cookie_lifetime' => 300,
-]);
+session_start();
 
 if (!isset($_SESSION["email"])) {
     header("Location: login.php");
@@ -13,6 +11,7 @@ if (isset($_SESSION["role"])) {
 if($_SESSION["userName"]){
   $userName=$_SESSION["userName"];
 }
+
 
 
 
@@ -87,7 +86,7 @@ if($_SESSION["userName"]){
                 <?php if($admin== "admin"){?>
                 <td>
                 <a class="btn btn-info" href="userEdit.php?<?php echo"edit=$count"; ?>">Edit</a> ||
-                <a class="btn btn-danger" href="userDelete.php?<?php echo "edit=$count"; ?>">Delete</a>
+                <a class="btn btn-danger" href="userDelete.php?<?php echo "delete=$count"; ?>">Delete</a>
 
                 </td>
                 <?php }?>

@@ -1,3 +1,2 @@
 admin,Abdullah Al Masum,masum@gmail.com,12345
-manager,Abdullah,abc@mail.com,12345
-user,masum,masum1@gmail.com,12345
+manager,masum,abc@mail.com,12345
